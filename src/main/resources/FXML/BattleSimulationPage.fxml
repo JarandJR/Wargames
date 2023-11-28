@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ntnu.idatt2001.jarandjr.wargames.App.Controllers.BattleSimulationController">
+   <VBox fx:id="titleTxtArmiesBattlePage" prefHeight="54.0" prefWidth="540.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <Label fx:id="txtTitleArmyOne" prefHeight="17.0" prefWidth="547.0" text="army one" />
+      </children>
+   </VBox>
+   <VBox fx:id="titleTxtArmiesBattlePage" layoutX="540.0" prefHeight="54.0" prefWidth="540.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <Label fx:id="txtTitleArmyTwo" prefHeight="17.0" prefWidth="540.0" text="army two" />
+      </children>
+   </VBox>
+    <VBox fx:id="terrainContainer" layoutY="75.0" prefHeight="580.0" prefWidth="1080.0">
+        <children>
+            <Canvas fx:id="terrain" height="596.0" width="1056.0" />
+        </children></VBox>
+   <VBox fx:id="battlefieldContainer" layoutY="75.0" prefHeight="580.0" prefWidth="1080.0">
+      <children>
+         <Canvas fx:id="canvas" height="596.0" width="1056.0" />
+      </children></VBox>
+    <VBox fx:id="menuBtnHomeBox" layoutX="897.0" layoutY="675.0" prefHeight="34.0" prefWidth="179.0">
+        <children>
+            <Button mnemonicParsing="false" onAction="#btnSwitchToStartUpPage" prefHeight="25.0" prefWidth="186.0" text="Home" />
+        </children></VBox>
+    <VBox fx:id="menuBtnStartGameBox" layoutX="723.0" layoutY="675.0" prefHeight="34.0" prefWidth="153.0">
+        <children>
+            <Button fx:id="btnGameSetUp" mnemonicParsing="false" onAction="#btnSwitchPageToGameSetup" prefHeight="25.0" prefWidth="132.0" text="Game Setup" />
+        </children>
+    </VBox>
+   <VBox fx:id="btnSimulationContainer" layoutY="71.0" prefHeight="96.0" prefWidth="1080.0">
+      <children>
+         <Button fx:id="btnSimulate" mnemonicParsing="false" onAction="#btnStartBattle" text="Start Battle" />
+      </children>
+   </VBox>
+</AnchorPane>

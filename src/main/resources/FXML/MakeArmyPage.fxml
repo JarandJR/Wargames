@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="pane" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ntnu.idatt2001.jarandjr.wargames.App.Controllers.MakeArmyController">
+   <children>
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77899998" height="663.0" layoutX="-1.0" layoutY="56.0" stroke="BLACK" strokeType="INSIDE" width="1082.0" />
+      <Label fx:id="txtTitle" layoutY="-2.0" prefHeight="25.0" prefWidth="1090.0" text="Army Editor" />
+      <VBox fx:id="unitBox" layoutX="335.0" layoutY="178.0" prefHeight="98.0" prefWidth="362.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="408.0" text="Make Unit" />
+            <ComboBox fx:id="cBoxUnitType" prefHeight="26.0" prefWidth="402.0" promptText="Select unit type" />
+            <Label fx:id="txtNumberOfUnits" prefHeight="23.0" prefWidth="362.0" />
+            <Slider fx:id="sliderNumberOfUnits" max="500.0" min="1.0" prefHeight="14.0" prefWidth="362.0" value="100.0" />
+         </children>
+      </VBox>
+      <VBox fx:id="currentArmyBox" layoutX="731.0" layoutY="356.0" prefHeight="290.0" prefWidth="324.0">
+         <children>
+            <Label fx:id="txtCurrentArmy" alignment="CENTER" prefHeight="24.0" prefWidth="324.0" text="Current Army" />
+            <ListView fx:id="listArmyInfo" prefHeight="248.0" prefWidth="380.0" />
+         </children>
+      </VBox>
+      <VBox fx:id="newArmyBox" layoutX="730.0" layoutY="178.0" prefHeight="53.0" prefWidth="324.0">
+         <children>
+            <TextField fx:id="txtInpArmyName" prefHeight="27.0" prefWidth="281.0" promptText="Army Name" />
+            <Button fx:id="btnAddArmy" mnemonicParsing="false" onAction="#btnMakeArmy" prefHeight="25.0" prefWidth="191.0" text="Make Army" />
+         </children>
+      </VBox>
+      <VBox fx:id="unitInfoBox" layoutX="336.0" layoutY="360.0" prefHeight="278.0" prefWidth="362.0">
+         <children>
+            <Label fx:id="txtCurrentUnitType" alignment="CENTER" prefHeight="21.0" prefWidth="361.0" text="Unit Info" />
+            <ListView fx:id="listUnitInfo" prefHeight="247.0" prefWidth="362.0" />
+         </children></VBox>
+      <VBox fx:id="menuBtnHomeBox" layoutX="897.0" layoutY="675.0" prefHeight="34.0" prefWidth="179.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btnSwitchToStartUpPage" prefHeight="25.0" prefWidth="186.0" text="Home" />
+         </children></VBox>
+      <VBox fx:id="deleteArmyBox" layoutX="731.0" layoutY="242.0" prefHeight="72.0" prefWidth="324.0">
+         <children>
+            <ComboBox fx:id="cBoxListArmies" prefHeight="26.0" prefWidth="361.0" promptText="Select current army" />
+         </children>
+      </VBox>
+      <VBox fx:id="menuBtnStartGameBox" layoutX="723.0" layoutY="675.0" prefHeight="34.0" prefWidth="153.0">
+         <children>
+            <Button fx:id="btnStartGame" mnemonicParsing="false" onAction="#btnSwitchPageGameStartUp" prefHeight="25.0" prefWidth="132.0" text="Start Game" />
+         </children>
+      </VBox>
+      <VBox layoutX="13.0" layoutY="197.0" prefHeight="470.0" prefWidth="312.0">
+         <children>
+            <Canvas fx:id="imgUnitType" height="431.0" width="314.0" />
+         </children></VBox>
+      <VBox fx:id="addUnitsButtonBox" layoutX="337.0" layoutY="279.0" prefHeight="34.0" prefWidth="179.0">
+         <Button fx:id="btnAddUnits" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnAddUnitsToArmy" prefHeight="26.0" prefWidth="144.0" text="Add Units" />
+      </VBox>
+      <VBox fx:id="removeUnitsButtonBox" layoutX="518.0" layoutY="279.0" prefHeight="34.0" prefWidth="179.0">
+         <Button fx:id="btnRemoveUnits" mnemonicParsing="false" onAction="#btnRemoveUnits" prefHeight="25.0" prefWidth="187.0" text="Remove Units" />
+      </VBox>
+      <VBox fx:id="removeUnitsButtonBox1" layoutX="731.0" layoutY="279.0" prefHeight="34.0" prefWidth="324.0">
+         <children>
+            <Button fx:id="btnDeleteArmy" mnemonicParsing="false" onAction="#btnDeleteCurrentArmy" prefHeight="26.0" prefWidth="128.0" text="Delete Army" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

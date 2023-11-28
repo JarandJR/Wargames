@@ -1,0 +1,318 @@
+/*
+General styling
+ */
+#pane {
+    -fx-background-image: url("../Images/foggyWinterForrest.jpg");
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-max-height: 720;
+    -fx-max-width: 1080;
+    -fx-min-height: 720;
+    -fx-min-width: 1080;
+}
+.text-area {
+    -fx-background-color: #392B24;
+    -fx-text-fill: #FFF8EE;
+    -fx-border-color: #906B52;
+}
+
+.list-view {
+    -fx-background-color: #392B24;
+    -fx-text-fill: #FFF8EE;
+    -fx-font-family: "Copperplate Gothic Light";
+    -fx-border-color: #906B52;
+    -fx-border-width: 1;
+}
+
+.list-cell {
+    -fx-font-family: "Copperplate Gothic Light";
+    -fx-background-color: #392B24;
+    -fx-text-fill: #FFF8EE;
+}
+
+.list-cell:hover {
+    -fx-background-color: #C3A269;
+}
+
+.list-cell:selected {
+    -fx-background-color: #906B52;
+}
+
+.button {
+    -fx-font-family: "Copperplate Gothic Light";
+    -fx-background-color: #392B24;
+    -fx-border-color: #906B52;
+    -fx-text-fill: #FFF8EE;
+    -fx-border-width: 2;
+    -fx-min-height: 35;
+    -fx-min-width: 170;
+    -fx-font-size: 15;
+}
+
+.button:hover {
+    -fx-border-color: #B5A050;
+}
+
+.button:pressed {
+    -fx-border-color: #DEC65E;
+}
+
+.label {
+    -fx-font-size: 12;
+    -fx-min-height: 20;
+    -fx-border-width: 1;
+    -fx-text-fill: #FFF8EE;
+    -fx-border-color: #906B52;
+    -fx-background-color: #392B24;
+    -fx-font-family: "Copperplate Gothic Light";
+}
+
+.label:hover {
+    -fx-background-color: #C3A269;
+}
+
+#txtTitle {
+    -fx-font-size: 100;
+    -fx-border-width: 0;
+    -fx-min-height: 110;
+    -fx-border-color: #392B24;
+    -fx-alignment: center center;
+}
+
+#txtTitle:hover {
+    -fx-background-color: #392B24;
+}
+
+
+
+
+
+/*
+Styling for the start up page
+ */
+#menuBtnContainerStartGame {
+    -fx-alignment: center center;
+}
+
+#menuBtnContainerMakeArmy {
+    -fx-alignment: center center;
+}
+
+#menuBtnContainerEditArmies{
+    -fx-alignment: center center;
+}
+
+#btnStartGameMenu {
+    -fx-border-width: 5;
+    -fx-min-height: 80;
+    -fx-min-width: 750;
+    -fx-max-width: 750;
+    -fx-font-size: 35
+}
+
+#btnDisplayArmies {
+    -fx-border-width: 5;
+    -fx-min-height: 80;
+    -fx-min-width: 750;
+    -fx-max-width: 750;
+    -fx-font-size: 35
+}
+
+#btnMakeArmy {
+    -fx-border-width: 5;
+    -fx-min-height: 80;
+    -fx-min-width: 750;
+    -fx-max-width: 750;
+    -fx-font-size: 35
+}
+
+#optionsBtnContainer {
+    -fx-alignment: top-right;
+}
+
+#quitBtnContainer {
+    -fx-alignment: top-left;
+}
+
+#btnMenuSources {
+    -fx-border-width: 3;
+    -fx-min-width: 375;
+    -fx-max-width: 375;
+    -fx-min-height: 80;
+    -fx-font-size: 30
+}
+
+#btnMenuQuit {
+    -fx-border-width: 3;
+    -fx-min-width: 375;
+    -fx-max-width: 375;
+    -fx-min-height: 80;
+    -fx-font-size: 30
+}
+
+
+
+
+/**
+styling for the make army page
+ */
+#menuBtnStartGameBox {
+    -fx-alignment: top-right;
+}
+
+#removeUnitBox {
+    -fx-alignment: top-right;
+}
+
+#newArmyBox {
+    -fx-alignment: top-right;
+}
+
+#btnAddArmy {
+    -fx-min-width: 324;
+}
+
+#unitBox {
+    -fx-alignment: top-right;
+}
+
+
+#deleteArmyBox {
+    -fx-alignment: top-right;
+}
+
+#btnDeleteArmy {
+    -fx-min-width: 324;
+}
+
+#txtNumberOfUnits:hover {
+    -fx-background-color: #392B24;
+}
+
+
+
+
+/*
+Styling for the game setup page
+ */
+#btnCreateArmyBox {
+    -fx-alignment: top-left;
+}
+
+#btnDisplayArmiesBox {
+    -fx-alignment: top-right;
+}
+
+#btnBeginBattle {
+    -fx-font-size: 35;
+    -fx-min-height: 70;
+    -fx-min-width: 400;
+    -fx-border-color: #bf0808;
+}
+
+#btnBeginBattle:hover {
+    -fx-border-color: #db872c;
+}
+
+#simulateBtnContainer {
+    -fx-alignment: center center;
+}
+
+
+
+
+/*
+Styling for the BattleSimulation page
+ */
+#battlefieldContainer {
+    -fx-alignment: center center;
+}
+
+#terrainContainer {
+    -fx-alignment: center center;
+}
+
+#txtTitleArmyOne {
+    -fx-font-size: 30;
+    -fx-border-width: 0;
+    -fx-min-height: 70;
+    -fx-border-color: #906B52;
+    -fx-alignment: center center;
+}
+
+#txtTitleArmyOne:hover {
+    -fx-background-color: #392B24;
+}
+
+#txtTitleArmyTwo {
+    -fx-font-size: 30;
+    -fx-border-width: 0;
+    -fx-min-height: 70;
+    -fx-border-color: #906B52;
+    -fx-alignment: center center;
+}
+
+#txtTitleArmyTwo:hover {
+    -fx-background-color: #392B24;
+}
+
+
+#btnSimulationContainer {
+    -fx-alignment: center center;
+}
+
+#btnSimulate {
+    -fx-font-size: 40;
+    -fx-min-height: 65;
+    -fx-min-width: 250;
+    -fx-border-color: #bf0808;
+}
+#btnSimulate:hover {
+    -fx-border-color: #db872c;
+}
+
+
+
+
+
+/*
+Styling for the Display Armies page
+ */
+#btnGameSetupArmyEditor {
+    -fx-min-width: 393;
+    -fx-min-height: 40;
+}
+
+
+
+/*
+Styling for the sources page
+ */
+#btnSourcesHomeBox {
+    -fx-alignment: center center;
+}
+
+#btnSourcesHome {
+    -fx-border-width: 3;
+    -fx-min-height: 80;
+    -fx-min-width: 750;
+    -fx-max-width: 750;
+    -fx-font-size: 35
+}
+
+#txtSourcesContainer {
+    -fx-alignment: center center;
+}
+
+#txtAreaSources {
+    -fx-min-width: 750;
+    -fx-max-width: 750;
+    -fx-text-fill: #111111;
+    -fx-alignment: top-left;
+    -fx-background-color: #ffffff;
+}
+
+#txtAreaSources:hover {
+    -fx-text-fill: #111111;
+    -fx-background-color: #ffffff;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ntnu.idatt2001.jarandjr.wargames.App.Controllers.SourcesController">
+    <Label fx:id="txtTitle" alignment="CENTER" prefHeight="31.0" prefWidth="758.0" text="Sources" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <VBox fx:id="btnSourcesHomeBox" layoutY="363.0" prefHeight="52.0" prefWidth="600.0" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <Button fx:id="btnSourcesHome" mnemonicParsing="false" onAction="#btnSwitchToStartUpPageFromSources" prefHeight="25.0" prefWidth="186.0" text="Home" />
+    </VBox>
+    <VBox fx:id="txtSourcesContainer" layoutY="163.0" prefHeight="415.0" prefWidth="1080.0">
+        <Label fx:id="txtAreaSources" prefHeight="417.0" prefWidth="1080.0" />
+    </VBox>
+</AnchorPane>

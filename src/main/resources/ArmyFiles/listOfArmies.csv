@@ -1,0 +1,25 @@
+MaxUnits1
+InfantryUnit,INFANTRY_UNIT,100,800
+RangedUnit,RANGED_UNIT,100,500
+CavalryUnit,CAVALRY_UNIT,100,280
+CommanderUnit,COMMANDER_UNIT,180,100
+MaxUnits2
+InfantryUnit,INFANTRY_UNIT,100,800
+RangedUnit,RANGED_UNIT,100,500
+CavalryUnit,CAVALRY_UNIT,100,280
+CommanderUnit,COMMANDER_UNIT,180,100
+InfantryArmy
+InfantryUnit,INFANTRY_UNIT,100,200
+RangedArmy
+RangedUnit,RANGED_UNIT,100,150
+CavalryArmy
+CavalryUnit,CAVALRY_UNIT,100,100
+CommanderArmy
+CommanderUnit,COMMANDER_UNIT,180,50
+Orch Army
+CavalryUnit,CAVALRY_UNIT,100,700
+CommanderUnit,COMMANDER_UNIT,180,1
+Human Army
+InfantryUnit,INFANTRY_UNIT,100,1000
+RangedUnit,RANGED_UNIT,100,500
+CommanderUnit,COMMANDER_UNIT,180,1

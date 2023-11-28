@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="edu.ntnu.idatt2001.jarandjr.wargames.App.Controllers.StartUpPageController">
+   <Label fx:id="txtTitle" alignment="CENTER" prefHeight="31.0" prefWidth="758.0" text="Wargames"
+          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+   <VBox fx:id="menuBtnContainerStartGame" layoutY="225.0" prefHeight="80.0" prefWidth="1080.0"
+         AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Button fx:id="btnStartGameMenu" mnemonicParsing="false" onAction="#btnChangePageStartGame" text="Start Game"/>
+   </VBox>
+   <VBox fx:id="menuBtnContainerMakeArmy" layoutY="325.0" prefHeight="80.0" prefWidth="1080.0">
+      <Button fx:id="btnMakeArmy" mnemonicParsing="false" onAction="#btnChangePageMakeArmy" text="Make Army"/>
+   </VBox>
+   <VBox fx:id="menuBtnContainerEditArmies" layoutY="425.0" prefHeight="100.0" prefWidth="1080.0">
+      <Button fx:id="btnDisplayArmies" mnemonicParsing="false" onAction="#btnChangePageDisplayArmies"
+              text="Display Armies"/>
+   </VBox>
+   <VBox fx:id="optionsBtnContainer" layoutX="11.0" layoutY="335.0" prefHeight="100.0" prefWidth="538.0"
+         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+      <Button fx:id="btnMenuSources" mnemonicParsing="false" onAction="#btnChangeToSourcesPage" text="Sources"/>
+   </VBox>
+   <VBox fx:id="quitBtnContainer" layoutX="304.0" layoutY="335.0" prefHeight="100.0" prefWidth="538.0"
+         AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Button fx:id="btnMenuQuit" mnemonicParsing="false" onAction="#btnQuitGame" text="Quit Game"/>
+   </VBox>
+</AnchorPane>
